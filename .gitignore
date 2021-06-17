@@ -1,0 +1,9 @@
+#things CDN was excluding specifically
+*.DS_Store
+/css/common.css
+node_modules
+/.idea/
+.idea/workspace.xml
+Thumbs.db
+npm-debug.log
+*/.vs/
