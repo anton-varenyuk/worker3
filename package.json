@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
