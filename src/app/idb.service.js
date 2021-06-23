@@ -1,8 +1,12 @@
 
-export default class Db {
-    constructor(storageName) {
-        this.storageName = storageName
+export default class IDBService {
+
+    constructor(dbName, storageName) {
+        this.dbName = dbName;
+        this.storageName = storageName;
+        this.init();
     }
+
 
     startTx(storageName, mode) {
         return new Promise(resolve => {
@@ -39,18 +43,18 @@ export default class Db {
     }
     
     openRequest() {
-        return indexedDB.open('words', 8);
+        return indexedDB.open(this.dbName, 7);
     }
-    
+
+
     init() {
-        this.openRequest().onupgradeneeded = function(event) {
-            let db = event.target.result;
-        
-            if (!event.target.result.objectStoreNames.contains('words')) {
-                let objectStore = db.createObjectStore('words', { autoIncrement: true });
+        this.openRequest().onupgradeneeded = (e) => {
+            let db = e.target.result;
+
+            if (!db.objectStoreNames.contains(this.storageName)) {
+                db.createObjectStore(this.storageName, {autoIncrement: true});
             }
         }
     }
-   
 }
 

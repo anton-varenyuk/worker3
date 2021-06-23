@@ -1,7 +1,6 @@
-    import Db from "./app/db";
-    const db = new Db('words');
-    db.init();
-    console.log(db);
+    import IDBService from "./app/idb.service";
+    import "./app/style.css";
+    const db = new IDBService('newDB', 'words');
 
     const input = document.getElementById('first');
 
