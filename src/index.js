@@ -1,6 +1,6 @@
     import IDBService from "./app/idb.service";
-    import "./app/style.css";
-    const db = new IDBService('newDB', 'words');
+    import "./app/styles/style.css";
+    const db = new IDBService('newDB', 'werds');
 
     const input = document.getElementById('first');
 
@@ -10,10 +10,6 @@
             input.value = "";
         }
     }
-
-
-
-    
 
     // if (window.Worker) {
     //     const htmlCanvas = document.getElementById("canvas");

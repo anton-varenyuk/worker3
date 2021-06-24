@@ -46,7 +46,6 @@ export default class IDBService {
         return indexedDB.open(this.dbName, 7);
     }
 
-
     init() {
         this.openRequest().onupgradeneeded = (e) => {
             let db = e.target.result;
