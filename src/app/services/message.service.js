@@ -10,11 +10,7 @@ export default class MessageService {
     }
 
     renderMessage(text, time) {
-        this.chatRef.appendChild(this.receiveMessage(text, time));
-    }
-
-    receiveMessage(text, time) {
-        return new MessageComponent(text, time).template();
+        this.chatRef.appendChild(new MessageComponent(text, time).template());
     }
 
     watchInput() {
