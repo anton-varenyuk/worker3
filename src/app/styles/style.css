@@ -1,29 +1,90 @@
-#canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-body {
-    background-color: bisque;
-}
-
-h1 {
-    font-family: "Lato", sans-serif;
-}
-
+/* Fonts */
 @font-face {
     font-family: "Lato";
     src: url("../fonts/Lato-Regular.woff") format("woff"),
          url("../fonts/Lato-Regular.woff2") format("woff2");
     font-weight: normal;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#chat {
+    background: #e9f5f2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#chat-box-container {
+    height: 85vh;
+    overflow-y: scroll;
+    background: #ffffff;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 82vh;
+    height: max-content;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.message-box {
+    height: 40px;
+    background: #ffffff;
+}
+
+#message-input {
+    width: 100%;
+    height: inherit;
+    border: none;
+    padding: 0 5px;
+}
+
+.message {
+    min-height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    width: max-content;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d1dedb;
+    border-radius: 10px;
+}
+
+/*!* Hide scrollbar for IE, Edge and Firefox *!*/
+/*#chat-box-container {*/
+/*    -ms-overflow-style: none;  !* IE and Edge *!*/
+/*    scrollbar-width: 5px;  !* Firefox *!*/
+/*}*/

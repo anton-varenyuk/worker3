@@ -1,15 +1,11 @@
-    import IDBService from "./app/idb.service";
+    import IDBService from "./app/services/idb.service";
     import "./app/styles/style.css";
+    import MessageService from "./app/services/message.service";
+
+
     const db = new IDBService('newDB', 'werds');
+    const messageService = new MessageService();
 
-    const input = document.getElementById('first');
-
-    input.onkeydown = (e) => {
-        if (e.key === 'Enter') {
-            db.storeData(input.value);
-            input.value = "";
-        }
-    }
 
     // if (window.Worker) {
     //     const htmlCanvas = document.getElementById("canvas");
