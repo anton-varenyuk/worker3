@@ -2,10 +2,8 @@
     import "./app/styles/style.css";
     import MessageService from "./app/services/message.service";
 
-
     const db = new IDBService('newDB', 'werds');
     const messageService = new MessageService();
-
 
     // if (window.Worker) {
     //     const htmlCanvas = document.getElementById("canvas");

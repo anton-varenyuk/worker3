@@ -1,9 +1,15 @@
 export default class MessageComponent {
-    constructor(text) {
+    constructor(text, time) {
         this.text = text;
+        this.time = time;
     }
 
-    send() {
-        return document.createRange().createContextualFragment(`<div class="message">${this.text}</div>`);
+    template() {
+        return document.createRange().createContextualFragment(
+            `<div class="message">
+                        <span class="message-time">${this.time}</span>
+                        <div class="message-text">${this.text}</div>
+                      </div>`
+        )
     }
 }
