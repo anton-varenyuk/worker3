@@ -18,15 +18,17 @@ export default class MessageService {
 
     watchInput() {
         this.inputRef.addEventListener('keydown', (e) => {
-            let checkKey = (e.code === 'Enter' || e.code === 'NumpadEnter');
-            let checkVal = (this.inputRef.value !== '' && this.inputRef.value.trim() !== '' );
+            let enterPressed = (e.code === 'Enter' || e.code === 'NumpadEnter');
+            let valueEmpty = (this.inputRef.value === '' || this.inputRef.value.trim() === '' );
             let message = { text: this.inputRef.value, time: moment().format('DD.MM, HH:mm') }
 
-            if ( checkKey && checkVal ) {
+            if ( enterPressed && !valueEmpty ) {
                 this.renderMessage(message.text, message.time);
                 this.saveMessage(message.text, message.time);
                 this.inputRef.value = '';
                 this.scrollChat();
+            } else if (enterPressed && valueEmpty) {
+                this.inputRef.value = '';
             }
         })
     }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1229" height="305" viewBox="0 0 1229 305">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000807;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+        stroke: url(#linear-gradient);
+        filter: url(#filter);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1007.654" y1="558.25" x2="1007.654" y2="854.875" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5ed1e1" stop-opacity="0.996"/>
+      <stop offset="0.499" stop-color="#bfc2fe"/>
+      <stop offset="1" stop-color="#e8bddb"/>
+    </linearGradient>
+    <filter id="filter" x="391" y="552" width="1233" height="309" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="397.688" y="558.25" width="1219.932" height="296.625" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIxOS45MzIiIGhlaWdodD0iMjk2LjYyNSIgdmlld0JveD0iMCAwIDEyMTkuOTMyIDI5Ni42MjUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNjA5Ljk2NiIgeTE9IjI5Ni42MjUiIHgyPSI2MDkuOTY2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzg1ZjRiYiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4Y2Q5ZTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEyMTkuOTMyIiBoZWlnaHQ9IjI5Ni42MjUiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-393 -554)" style="fill: #000807; filter: url(#filter)">
+    <path id="BCCH" class="cls-1" d="M649.382,854.875V812.5h41.951V727.75H649.382V685.375h41.951v-84.75H649.382V558.25H397.675V854.875H649.382Zm-167.8-254.25H607.431v84.75H481.577v-84.75Zm0,127.125H607.431V812.5H481.577V727.75ZM958.143,854.875V812.5h41.947V770.125h-83.9V812.5h-83.9V770.125H790.338V643H832.29V600.625h83.9V643h83.9V600.625H958.143V558.25H790.338v42.375H748.387V643H706.436V770.125h41.951V812.5h41.951v42.375H958.143Zm308.757,0V812.5h41.96V770.125h-83.91V812.5h-83.9V770.125H1099.1V643h41.95V600.625h83.9V643h83.91V600.625H1266.9V558.25H1099.1v42.375h-41.95V643H1015.2V770.125h41.95V812.5h41.95v42.375h167.8Zm140.96,0V727.75h125.85V854.875h83.91V558.25h-83.91V685.375H1407.86V558.25h-83.9V854.875h83.9Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-393 -554)" xlink:href="#BCCH" style="stroke: url(#linear-gradient); filter: none; fill: none"/>
+</svg>
