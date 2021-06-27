@@ -7,9 +7,9 @@ export default class MessageComponent {
     template() {
         return document.createRange().createContextualFragment(
             `<div class="message">
-                        <span class="message-time">${this.time}</span>
-                        <div class="message-text">${this.text}</div>
-                      </div>`
+                <span class="message-time">${this.time}</span>
+                <div class="message-text">${this.text}</div>
+            </div>`
         )
     }
 }

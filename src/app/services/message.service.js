@@ -12,10 +12,6 @@ export default class MessageService {
         this.watchInput();
     }
 
-    renderMessage(message, time) {
-        this.chatRef.appendChild(new MessageComponent(message, time).template());
-    }
-
     watchInput() {
         this.inputRef.addEventListener('keydown', (e) => {
             let enterPressed = (e.code === 'Enter' || e.code === 'NumpadEnter');
@@ -35,6 +31,10 @@ export default class MessageService {
 
     scrollChat() {
         document.getElementById('chat-box-container').scroll(0, this.chatRef.offsetHeight);
+    }
+
+    renderMessage(message, time) {
+        this.chatRef.appendChild(new MessageComponent(message, time).template());
     }
 
     renderMessages() {
